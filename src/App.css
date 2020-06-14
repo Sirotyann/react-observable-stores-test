@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.todos > li, ul.contacts > li {
+  line-height: 30px;
+  padding: 3px 10px 3px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+ul.contacts {
+  background: #282c34;
+  color: #CCCCCC;
+}
+
+button {
+  padding: 5px 15px 5px;
+}
+
+.content {
+  display: flex;
+}
+
+.content > div {
+  flex: 1;
+}
+
+ul.tabs {
+  display: flex;
+  margin-bottom: 15px; 
+}
+
+ul.tabs > li {
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  background: #CCC;
+  border: 1px solid #999;
+  color: #666;
+}
+
+ul.tabs > li.active {
+  cursor: none;
+  background: #666;
+  color: #fafafa;
+  border: 1px solid #666;
+}
+
+ul.histories {
+  margin-top: 10px; 
+  color: #666;
+}
+
+ul.histories li {
+  padding: 10px;
+}
+
+ul.histories li:nth-child(2n+1){
+  background: #eaeaea;
+}
+
+ul.histories li:nth-child(2n){
+  background: #fafafa;
+}
